@@ -1,4 +1,3 @@
-![3](https://github.com/user-attachments/assets/cc2e8dba-5968-4a56-ba91-5d0630252710)DTC HUB
 A comprehensive PHP-based web application designed specifically for students of **Delhi Technical Campus (DTC)**. This platform provides a user-friendly interface for managing user accounts, admin functionalities, and a responsive dashboard for seamless user interactions.
 Features
 - **Admin Panel**:
