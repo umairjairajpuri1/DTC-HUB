@@ -1,4 +1,4 @@
-DTC HUB
+![3](https://github.com/user-attachments/assets/cc2e8dba-5968-4a56-ba91-5d0630252710)DTC HUB
 A comprehensive PHP-based web application designed specifically for students of **Delhi Technical Campus (DTC)**. This platform provides a user-friendly interface for managing user accounts, admin functionalities, and a responsive dashboard for seamless user interactions.
 Features
 - **Admin Panel**:
@@ -59,6 +59,11 @@ We welcome contributions from DTC students! Feel free to:
 - Submit a pull request to share your updates.
 License
 This project is licensed under the [MIT License](LICENSE).
+
+
+![1](https://github.com/user-attachments/assets/223a447e-9e7d-4864-a4cf-4facca638d0d)
+![2](https://github.com/user-attachments/assets/9ecc9813-9eb1-4056-9b84-ab7f24e38111)
+![3](https://github.com/user-attachments/assets/efe8dae1-b55b-4a8f-85ea-581a4bac9217)
 
 
 
