@@ -1,0 +1,81 @@
+/* General Theme Settings */
+body.dark-mode {
+    background-color: #000;
+    color: #fff;
+}
+
+body.light-mode {
+    background-color: #fff;
+    color: #000;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #1a1a1a;
+    padding: 10px 20px;
+}
+
+.navbar.light-mode {
+    background-color: #f8f9fa;
+}
+
+.navbar-logo {
+    height: 50px;
+}
+
+.navbar-menu {
+    display: flex;
+    list-style: none;
+}
+
+.navbar-menu li {
+    margin-left: 20px;
+}
+
+.navbar-menu a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.navbar-menu a.light-mode {
+    color: #000;
+}
+
+.theme-toggle {
+    background: none;
+    border: 1px solid #fff;
+    color: #fff;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.theme-toggle.light-mode {
+    border-color: #000;
+    color: #000;
+}
+
+/* Notes Box */
+.notes-box {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.notes-box a {
+    padding: 10px;
+    border-radius: 8px;
+    text-decoration: none;
+    color: white;
+    flex: 1 0 calc(33.33% - 15px);
+    text-align: center;
+    background-color: #007bff;
+}
+
+.notes-box a:hover {
+    opacity: 0.9;
+    transform: scale(1.05);
+}
