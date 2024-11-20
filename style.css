@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+}
+
+/* Logo Container */
+.logo-container {
+    position: absolute;
+    top: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    z-index: 10;
+}
+
+.logo-container .logo {
+    width: 120px;
+    height: auto;
+    filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.3));
+}
+
+/* Background and Body */
+body {
+    background: url('https://i.postimg.cc/SRbN0Qxs/bg.jpg') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: #fff;
+    overflow: hidden;
+}
+
+/* Circular Form Container */
+.container {
+    position: relative;
+    width: 500px;
+    height: 500px;
+    background: #0a0a0a;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5);
+}
+
+/* Animated Gradient */
+.container::before,
+.container::after {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 500px;
+    height: 500px;
+    background: linear-gradient(90deg, transparent, #0598f7, #0598f7);
+    transform-origin: bottom right;
+    animation: animate 6s linear infinite;
+}
+
+.container::after {
+    animation-delay: -3s;
+}
+
+@keyframes animate {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Form Styling */
+form {
+    position: relative;
+    width: 100%;
+    max-width: 90%;
+    height: 90%;
+    background: #28292d;
+    border-radius: 50%;
+    z-index: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h2 {
+    color: #d31580;
+    font-size: 2rem;
+    font-weight: 500;
+    text-align: center;
+}
+
+.uc {
+    margin-top: 15px;
+    border-top: 1px solid #0598f7;
+    text-align: center;
+    width: 100%;
+}
+
+.uc b {
+    color: #0598f7;
+    background: #28292d;
+    font-size: 14px;
+    padding: 5px 15px;
+    border: 1px solid #0598f7;
+    border-radius: 50px;
+    display: inline-block;
+    margin-top: -10px;
+}
+
+/* Input Box Styling */
+.inputBox {
+    position: relative;
+    width: 100%;
+    max-width: 320px;
+    margin-top: 25px;
+}
+
+.inputBox input {
+    width: 100%;
+    padding: 12px 25px;
+    border-radius: 50px;
+    font-size: 1em;
+    color: #26e060;
+    background: transparent;
+    outline: none;
+    border: 1px solid #87a4bd;
+}
+
+.inputBox label {
+    position: absolute;
+    left: 25px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #87a4bd;
+    background: #28292d;
+    padding: 0 5px;
+    font-size: 12px;
+    text-transform: uppercase;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+
+.inputBox input:focus + label,
+.inputBox input:not(:placeholder-shown) + label {
+    transform: translateY(-30px);
+    color: #26e060;
+    font-size: 11px;
+}
+
+/* Submit Button */
+input[type="submit"] {
+    margin-top: 30px;
+    width: 100%;
+    max-width: 320px;
+    background: linear-gradient(to bottom, #0598f7, #4d26b8);
+    padding: 10px;
+    border-radius: 60px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    transition: all 0.3s ease-in-out;
+}
+
+input[type="submit"]:hover {
+    letter-spacing: 0.05em;
+    background: linear-gradient(to bottom, #4d26b8, #0598f7);
+}
+
+/* Links */
+.link-container {
+    margin-top: 15px;
+    font-size: 0.9em;
+    text-align: center;
+}
+
+.link-container a {
+    color: #87a4bd;
+    transition: 0.3s ease;
+}
+
+.link-container a:hover {
+    color: #26e060;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    h2 {
+        font-size: 1.8rem;
+    }
+
+    .uc b {
+        font-size: 12px;
+        padding: 4px 12px;
+    }
+
+    .inputBox input {
+        padding: 10px 20px;
+        font-size: 0.9em;
+    }
+
+    input[type="submit"] {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        width: 90%;
+        height: auto;
+        padding: 10px;
+    }
+
+    h2 {
+        font-size: 1.6rem;
+    }
+
+    .inputBox input {
+        padding: 8px 15px;
+        font-size: 0.8em;
+    }
+
+    input[type="submit"] {
+        font-size: 14px;
+    }
+}
